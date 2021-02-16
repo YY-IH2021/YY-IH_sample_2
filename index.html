@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html rang="ja">
+<head>
+<meta charset="utf-8">
+<title>アクアリウムオンラインショップ　AQUA SEA</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/flexslider.css"  rel="stylesheet">
+<link href="img/favicon.ico" rel="shortcut icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
+<script>
+<!--flexslider-->
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+
+
+$(function(){
+	var key=$('.keymargin');
+	var fix= $('.gnav');
+	var fixTop= fix.offset().top;
+ $(window).scroll(function(){
+	if($(window).scrollTop() >= fixTop){
+		fix.css("position","fixed");
+		fix.css("top","0");
+		fix.css("z-index","100");
+		fix.css("width","100%");
+		key.css("margin-top","64px");
+	}else{
+	fix.css("position","");
+	fix.css("top","");
+	key.css("margin-top","");
+	}
+	});
+});
+
+
+$(function(){
+	var topBtn = $("#page-top");
+	topBtn.hide();
+
+	$(window).scroll(function(){
+	if($(this).scrollTop()> 100){
+		topBtn.fadeIn();
+	}else{
+		topBtn.fadeOut();
+	}
+	});
+
+	topBtn.click(function(){
+	$("body,html").animate({
+		scrollTop:0
+	},500);
+	return false;
+});
+});	
+
+
+</script>
+ </head>
+
+<body>
+	<header>
+<div class="wrapper">
+		<div class="cf">
+		<ul class="gaid cf">
+			<li><a href="#">ご利用ガイド</a></li>
+			<li><a href="#">新規登録／ログイン</a></li>
+			<li><a href="#" class="cart"><img src="img/カート.svg"></a></li>
+		</ul>
+		</div><!--cf-->
+
+		<p class="logo"><img src="img/logo.svg"></p>
+</div><!--wrapper-->
+
+		<nav class="gnav">
+<div class="wrapper">
+			<ul class="cf menu">
+				<li><a href="#">HOME</a></li>
+				<li class="menu__mega"><a href="#" class="init-bottom menu_ruby">海水<br><span>Sea water</span></a>
+
+						
+					<ul class="menu__second-level">
+						<li class="kaisui1"><p>海水魚等</p>	
+							<div class="hukidashi"></div><div class="hukidashi2"></div>
+						
+							<ul class="kaisui_list1">
+							<li class="k_list1-1"><a href="#">スズメダイ</a></li>
+							<li class="k_list1-2"><a href="#">クマノミ</a></li>
+							<li class="k_list1-3"><a href="#">ハゼ</a></li>
+							<li class="k_list1-4"><a href="#">ハギ・ニザダイ</a></li>
+							<li class="k_list1-5"><a href="#">ゴンベ・ギンポ・ネズッポ・他</a></li>
+							</ul>
+							
+							<ul class="kaisui_list2">
+							<li class="k_list2-1"><a href="#">チョウチョウウオ</a></li>
+							<li class="k_list2-2"><a href="#">ヤッコ</a></li>
+							<li class="k_list2-3"><a href="#">ベラ・ブダイ</a></li>
+							<li class="k_list2-4"><a href="#">エビ・ヤドカリ</a></li>
+							<li class="k_list2-5"><a href="#">フグ・イザリ・マツカサ</a></li>
+							</ul>
+
+						</li>
+						<li class="kaisui2"><p>サンゴ等</p>	
+							<ul class="sango_list1">
+								<li class="s_list1-1"><a href="#">ソフトコーラル</a></li>
+								<li class="s_list1-2"><a href="#">ハードコーラル</a></li>
+									<ul class="s_list1-2-1">
+										<li><a href="#">SPL（ショートポリプ）</a></li>
+										<li><a href="#">LPS（ロングポリプ）</a></li>
+									</ul>
+								<li class="s_list1-3"><a href="#">陰日サンゴ</a></li>
+								<li class="s_list1-4"><a href="#">イソギンチャク</a></li>
+
+							</ul>							
+						</li>					
+					</ul>
+
+
+					
+				</li>
+
+				<li><a href="#" class="menu_ruby">淡水<br><span>Fresh water</span></a></li>
+				<li><a href="#" class="menu_ruby">水草<br><span>Water plants</span></a></li>
+				<li><a href="#" class="menu_ruby">飼育用品<br><span>Aquarium Goods</span></a></li>
+				<li><a href="#" class="menu_ruby">よくある質問<br><span>Question</span></a></li>
+			</ul>
+</div><!--wrapper-->
+		</nav>
+	</header>
+<div class="keymargin">
+<div class="key flexslider">
+	<ul class="slides cf">
+		<li><a href="#"><img src="img/banner1.jpg"   alt="アクアリウムのサマーセール"></a></li>
+		<li><a href="#"><img src="img/banner2.jpg"   alt="アクアリウムの猛暑対策"></a></li>
+		<li><a href="#"><img src="img/banner3.jpg"   alt="ハコフグの飼い方"></a></li>
+		<li><a href="#"><img src="img/banner4.jpg"   alt="デバスズメの魅力"></a></li>
+		<li><a href="#"><img src="img/banner5.jpg"   alt="水槽レイアウトテクニック"></a></li>
+	</ul>
+</div><!--keymargin-->
+</div><!--top-->
+<div class="wrapper">
+<main>
+<section class="news">
+	<h1>NEWS</h1>
+	<dl class="cf">
+	<dt>2018年8月1日</dt>
+	<dd><a href="#"><span>[SALE]</span>サマーセール情報を掲載しました。</a></dd>
+	</dl>
+	<dl class="cf">
+	<dt>2018年8月1日</dt>
+	<dd><a href="#">夏の猛暑対策特集を掲載しました。あなたの大切な熱帯魚がゆでだこになる前に…</a></dd>
+	</dl>
+	<dl class="cf">
+	<dt>2018年7月23日</dt>
+	<dd><a href="#">【デバスズメ特集】あえて語りつくします。「－海底のアクアマリン－　デバスズメの魅力」</a></dd>
+	</dl>
+</section>
+	<p class="button"><a href="#">もっと見る</a></p>
+</div><!--cont_wrapper-->
+<div class="wrapper">
+	<section class="pickup">
+		<h1>PICK UP</h1>
+	<div class="cf">
+		
+		<dl><a href="pickup1.html">
+		<dt><img src="img/pickup_1.jpg" alt="カクレクマノミ"></dt>
+		<dd class="day">2018年7月30日</dd>
+		<dd class="title">ハワイ便カクレクマノミ入荷</dd>
+		<dd class="comment">濃くて鮮やかなオレンジ色のカクレクマノミが入荷しました！</dd>
+		</a></dl>
+		
+	
+		
+		<dl><a href="#">
+		<dt class="ichioshi"><img src="img/pickup_2.jpg" alt="ナンヨウハギ"><p class="ichioshi"><img src="img/ichioshi1.svg"></p></dt>
+		<dd class="day">2018年7月30日</dd>
+		<dd class="title">ハワイ便ナンヨウハギ入荷</dd>
+		<dd class="comment">凄い元気！岩のコケをつついてます！色鮮やかなナンヨウハギが入荷しました♪</dd>
+		</a></dl>
+		
+
+		
+		<dl><a href="#">
+		<dt><img src="img/pickup_3.jpg" alt="マンジュウイシモチ"></dt>
+		<dd class="day">2018年7月28日</dd>
+		<dd class="title">マンジュウイシモチ入荷</dd>
+		<dd class="comment">複数飼いしやすい温和な性格。<br>体のドット柄から別名は「パジャマ・カージナルフィッシュ」</dd>
+		</a></dl>
+		
+
+		
+		<dl class="last"><a href="#">
+		<dt><img src="img/pickup_4.jpg" alt="セグロチョウチョウウオ"></dt>
+		<dd class="day">2018年7月28日</dd>
+		<dd class="title">セグロチョウチョウウオ入荷</dd>
+		<dd class="comment">直径5cm手ごろなサイズです♪<br>追記：一週間たって人口餌もしっかり食べています！</dd>
+		</a></dl>
+		
+	</div><!--cf-->
+		<p class="button pick_b"><a href="#">もっと見る</a></p>
+	</section>
+
+	<section class="special_edition">
+		<h1>特集・キャンペーン</h1>
+		<div class="cf">
+		<ul>
+			<li><a href="#"><img src="img/banner1.jpg"></a></li>
+			<li><a href="#"><img src="img/banner2.jpg"></a></li>
+			<li><a href="#"><img src="img/banner3.jpg"></a></li>
+			<li><a href="#"><img src="img/banner4.jpg"></a></li>
+			<li><a href="#"><img src="img/banner5.jpg"></a></li>
+			<li><a href="#"><img src="img/banner6.jpg"></a></li>
+			<li><a href="#"><img src="img/banner7.jpg"></a></li>
+			<li><a href="#"><img src="img/banner8.jpg"></a></li>
+		</ul>
+		</div><!--cf-->
+	</section>
+</main>
+</div><!--wrapper-->
+<footer>
+	<div class="wrapper">
+
+		<ul class="navi cf">
+			<li class="navi_1">海水
+				<ul>
+					<li class="navi_2 kaisui"><a href="#">海水魚等</a>
+						<ul>
+							<li class="navi_3"><a href="#">スズメダイ</a></li>
+							<li class="navi_3"><a href="#">クマノミ</a></li>
+							<li class="navi_3"><a href="#">ハゼ</a></li>
+							<li class="navi_3"><a href="#">ハギ・ニザダイ</a></li>
+							<li class="navi_3"><a href="#">ゴンベ・ギンポ・ネズッポ・他</a></li>
+							<li class="navi_3"><a href="#">チョウチョウウオ</a></li>
+							<li class="navi_3"><a href="#">ヤッコ</a></li>
+							<li class="navi_3"><a href="#">ベラ・ブダイ</a></li>
+							<li class="navi_3"><a href="#">エビ・ヤドカリ</a></li>
+							<li class="navi_3"><a href="#">フグ・イザリ・マツカサ</a></li>
+							<li class="navi_3"><a href="#">イソギンチャク・その他</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_2 sango"><a href="#">サンゴ</a>
+						<ul>
+							<li class="navi_3"><a href="#">ソフトコーラル</a></li>
+							<li class="navi_3"><a href="#">ハードコーラル</a>
+								<ul>
+									<li class="navi_4"><a href="#">ＳＰＳ（スモールポリプ）</a></li>
+									<li class="navi_4"><a href="#">ＬＰＳ（ロングポリプ）</a></li>
+								</ul>
+							</li>			
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class="navi_1">淡水
+				<ul>
+					<li class="navi_2 tansui"><a href="#">淡水魚等</a>
+						<ul>
+							<li class="navi_3"><a href="#">カラシン（テトラ）</a></li>
+							<li class="navi_3"><a href="#">エンゼル</a></li>
+							<li class="navi_3"><a href="#">コリドラス</a></li>
+							<li class="navi_3"><a href="#">ハギ・ニザダイ</a></li>
+							<li class="navi_3"><a href="#">ベタ・グラミー</a></li>
+							<li class="navi_3"><a href="#">プラティ</a></li>
+							<li class="navi_3"><a href="#">グッピー</a></li>
+							<li class="navi_3"><a href="#">エビ・貝</a></li>
+							<li class="navi_3"><a href="#">金魚</a></li>
+							<li class="navi_3"><a href="#">メダカ</a></li>
+							<li class="navi_3"><a href="#">その他</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+			<li class="navi_1"><a href="#">水草</a>
+				<ul>
+					<li class="navi_2 mizukusa">
+						<ul>
+							<li class="navi_3"><a href="#">有茎草</a></li>
+							<li class="navi_3"><a href="#">アヌビアス・シダ類</a></li>
+							<li class="navi_3"><a href="#">POT・鉢</a></li>
+							<li class="navi_3"><a href="#">エキノドルス</a></li>
+							<li class="navi_3"><a href="#">クリプトコリネ</a></li>
+							<li class="navi_3"><a href="#">ホシクサ</a></li>
+							<li class="navi_3"><a href="#">水草付流木</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+
+			<li class="navi_1"><a href="#">飼育用品</a>
+				<ul>
+					<li class="navi_2 shiiku">
+						<ul>
+							<li class="navi_3"><a href="#">水槽（単体）・水槽マット</a></li>
+							<li class="navi_3"><a href="#">キャビネット</a></li>
+							<li class="navi_3"><a href="#">プラスチックケース・その他</a></li>
+							<li class="navi_3"><a href="#">ポンプ</a></li>
+							<li class="navi_3"><a href="#">エサ</a></li>
+							<li class="navi_3"><a href="#">ヒーター・サーモ</a></li>
+							<li class="navi_3"><a href="#">水質調整</a></li>
+							<li class="navi_3"><a href="#">クーラー・ファン・冷却装置</a></li>
+							<li class="navi_3"><a href="#">照明</a></li>
+							<li class="navi_3"><a href="#">フィルター・濾過器</a></li>
+							<li class="navi_3"><a href="#">底砂</a></li>
+							<li class="navi_3"><a href="#">メンテナンス・掃除</a></li>
+							<li class="navi_3"><a href="#">レイアウト系</a></li>
+							<li class="navi_3"><a href="#">ろ過材・吸着剤</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+				
+			<li class="info">
+				<ul>
+				<li><a href="#">よくある質問</a></li>
+				<li><a href="#">飼い方・育て方/始め方</a></li>
+				<li><a href="#">ご利用ガイド</a></li>
+				</ul>
+			</li>
+	
+		</ul>	
+
+	<ul class="commpany cf">
+		<li><a href="#">会社概要</a></li>
+		<li><a href="#">プライバシーポリシー</a></li>
+		<li><a href="#">特定商取引に基づく表示</a></li>
+	</ul>
+</div><!--wrapper-->
+<div class="copy">
+	<p>&copy;2018 AQUA SEA</p>
+	<p>このサイトに記載されている記事・写真・図表などの無断複製、無断転載を禁じます。</p>
+</div>
+</footer>
+<p id="page-top"><a href="javascript void(0)">▲<br><span>page top</span></a></p>
+
+</body>
+</html>

@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<html rang="ja">
+<head>
+<meta charset="utf-8">
+<title>Pick up │アクアリウムオンラインショップ　AQUA SEA</title>
+<link href="css/style.css" rel="stylesheet">
+<link href="css/flexslider.css"  rel="stylesheet">
+<link href="img/favicon.ico" rel="shortcut icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="smoothScroll.js"></script>
+<script>
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+
+$(function(){
+	var fix= $('.gnav');
+	var fixTop= fix.offset().top;
+	var key=$('.keymargin');	
+ $(window).scroll(function(){
+	if($(window).scrollTop() >= fixTop){
+		fix.css("position","fixed");
+		fix.css("top","0");
+		fix.css("z-index","100");
+		fix.css("width","100%");
+			key.css("margin-top","64px");
+	}else{
+	fix.css("position","");
+	fix.css("top","");
+	key.css("margin-top","");	
+	}
+	});
+});
+
+$(function(){
+	var topBtn = $("#page-top");
+	topBtn.hide();
+
+	$(window).scroll(function(){
+	if($(this).scrollTop()> 100){
+		topBtn.fadeIn();
+	}else{
+		topBtn.fadeOut();
+	}
+	});
+
+	topBtn.click(function(){
+	$("body,html").animate({
+		scrollTop:0
+	},500);
+	return false;
+});
+});	
+
+
+
+$(function(){
+    $('.thumb li').click(function(){
+        var class_name = $(this).attr("class"); //クリックしたサムネイルのclass名を取得
+        var num = class_name.slice(5); //class名の末尾の数字を取得
+        $('.main li').hide(); //メインの画像を全て隠す
+        $('.item' + num).fadeIn(); //クリックしたサムネイルに対応するメイン画像を表示
+    });
+});
+
+</script>
+ </head>
+<body>
+	<header  id="utility">
+<div class="wrapper">
+		<div class="cf">
+		<ul class="gaid cf">
+			<li><a href="#">ご利用ガイド</a></li>
+			<li><a href="#">新規登録／ログイン</a></li>
+			<li><a href="#"><img src="img/カート.svg"></a></li>
+		</ul>
+		</div><!--cf-->
+
+		<p class="logo"><a href="index.html"><img src="img/logo.svg"></a></p>
+</div><!--wrapper-->
+
+		<nav class="gnav">
+<div class="wrapper">
+			<ul class="cf menu">
+				<li><a href="index.html">HOME</a></li>
+				<li class="menu__mega"><a href="#" class="init-bottom menu_ruby">海水<br><span>Sea water</span></a>
+
+						
+					<ul class="menu__second-level">
+						<li class="kaisui1"><p>海水魚等</p>	
+							<div class="hukidashi"></div><div class="hukidashi2"></div>
+						
+							<ul class="kaisui_list1">
+							<li class="k_list1-1"><a href="#">スズメダイ</a></li>
+							<li class="k_list1-2"><a href="#">クマノミ</a></li>
+							<li class="k_list1-3"><a href="#">ハゼ</a></li>
+							<li class="k_list1-4"><a href="#">ハギ・ニザダイ</a></li>
+							<li class="k_list1-5"><a href="#">ゴンベ・ギンポ・ネズッポ・他</a></li>
+							</ul>
+							<ul class="kaisui_list2">
+							<li class="k_list2-1"><a href="#">チョウチョウウオ</a></li>
+							<li class="k_list2-2"><a href="#">ヤッコ</a></li>
+							<li class="k_list2-3"><a href="#">ベラ・ブダイ</a></li>
+							<li class="k_list2-4"><a href="#">エビ・ヤドカリ</a></li>
+							<li class="k_list2-5"><a href="#">フグ・イザリ・マツカサ</a></li>
+
+							</ul>
+
+						</li>
+						<li class="kaisui2"><p>サンゴ等</p>	
+							<ul class="sango_list1">
+								<li class="s_list1-1"><a href="#">ソフトコーラル</a></li>
+								<li class="s_list1-2"><a href="#">ハードコーラル</a></li>
+									<ul class="s_list1-2-1">
+										<li><a href="#">SPL（ショートポリプ）</a></li>
+										<li><a href="#">LPS（ロングポリプ）</a></li>
+									</ul>
+								<li class="s_list1-3"><a href="#">陰日サンゴ</a></li>
+
+								<li class="s_list1-4"><a href="#">イソギンチャク</a></li>
+
+
+							</ul>							
+						</li>					
+					</ul>
+
+
+					
+				</li>
+
+
+				<li><a href="#" class="menu_ruby">淡水<br><span>Fresh water</span></a></li>
+				<li><a href="#" class="menu_ruby">水草<br><span>Water plants</span></a></li>
+				<li><a href="#" class="menu_ruby">飼育用品<br><span>Aquarium Goods</span></a></li>
+				<li><a href="#" class="menu_ruby">よくある質問<br><span>Question</span></a></li>
+			</ul>
+</div><!--wrapper-->
+		</nav>
+	</header>
+
+<div class="wrapper">
+<main>
+
+<section class="pick_key">
+
+<div class="keymargin">
+	<div class="c_image1">
+		<h1>あの映画の主人公！<br>ひらひら泳ぐかわいいアイドル♪</h1>
+	</div><!--c_image-->
+</div><!--keymargin-->
+
+	<p class="c_text">
+カクレクマノミは、映画「ファインディングニモ」のモデルにもなったと言われている、知名度ナンバーワンの海水魚。アクアリウムショップや水族館でもおなじみの存在です。<br>
+オレンジのボディに真っ白のバンド模様、水中でひらひら泳ぐ姿はとても可愛らしく、飼育に関しても比較的容易で初心者向けといえます。
+性格も穏やかな方なので、多種の魚との混泳にも適しています。
+ただ同種、近縁主との混泳は、縄張り争いをする可能性が高いので注意が必要です。<br>
+	</p>
+</section>
+
+
+<section class="product">
+	<h1>ハワイ便カクレクマノミ</h1>
+<div class="left cf">
+<ul class="main">
+    <li class="item1"><img src="img/p_image1.jpg" alt="" ></li>
+    <li class="item2"><img src="img/p_image2.jpg" alt="" ></li>
+    <li class="item3"><img src="img/p_image3.jpg" alt="" ></li>
+</ul>
+<ul class="thumb">
+    <li class="thumb1"><img src="img/p_image1.jpg" alt="" ></li>
+    <li class="thumb2"><img src="img/p_image2.jpg" alt="" ></li>
+    <li class="thumb3"><img src="img/p_image3.jpg" alt="" ></li>
+</ul>
+
+</div>
+<div class="cf">
+	<ul class="right">
+		<li>原産地：ハワイ</li>
+		<li>全長約：４～５㎝<img src="img/anshin.svg"  class="anshin" alt="初心者も安心"> </li>
+		<li>難易度<img src="img/star.svg" class="star" alt="難易度優しい"><span class="point"><a href="#">飼育のポイント紹介</a></span></li>
+		<li class="kakaku">価格<span class="money">1300円（税別）</span></li>
+		<form action="#">
+		<li><label>数量
+			<select name="数量">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+			</select>
+			<label>	
+
+		</li></form>
+
+		<h3>コメント</h3><p>ハワイ便のカクレクマノミは色もきれいでとても丈夫です！イソギンチャクにもすぐ馴染むし、今回来たコもサイズがちょうど良いので、ほかのカクレクマノミと一緒に水槽に入ればペアができるかも？</p>
+	<li class="purchase"><input  class="submit_button" type="submit" value="カートへ入れる"></li>
+	</ul>
+</section>
+
+
+
+
+<section class="commentary">
+
+	<dl class="cf">
+	<dt><img src="img/p_image5.jpg"></dt>
+	<dd><h2>イソギンチャクと一緒にゆらゆら</h2>
+	クマノミといえば、イソギンチャクと共生する姿をよく目にします。
+	ショップでもイソギンチャクにわしゃわしゃしている姿はとてもかわ
+	いいです♥<br>
+	ですが、イソギンチャクの飼育は、カクレクマノミと違って難易度は高め。<br>
+	イソギンチャクは水質悪化に敏感で、もし死んでしまうと体が溶けて水槽内が大惨事に!
+	ほかの魚にも影響を与える恐れがあるので、はじめはお魚単体での飼育をお勧めします。<br>
+	十分魚も元気に暮らせるようになって、水質も安定した水槽が出来上がってからお迎えしてあげましょう。</dd>
+	</dl>
+</section>
+</div><!--wrapper-->
+
+<hr size="1px" color="#dddddd" noshade>
+
+<div class="wrapper">
+<section class="relative">
+<h2>カクレクマノミの好きなイソギンチャク　ランキング</h2>
+<div class="cf">
+<dl class="cf">
+	<dt><a href="#"><img src="img/isogin1.jpg" alt="ハタゴイソギンチャク"></a><img src="img/ranking1.svg" class="rank1" alt=""></dt>
+	<dd class="name">ハタゴイソギンチャク</dd>
+	<dd class="comment">触手の短いカーペットのようなイソギンチャク。触手の毒が他の種類より強め。ノーマルカラーの茶色が一番多く、クリーム、ホワイト、グリーン、パープルなども流通しています。</dd>
+	<dd class="kaikata"><a href="#">飼育のポイント</a></dd>
+</dl>
+
+<dl>
+	<dt><a href="#"><img src="img/isogin2.jpg"  alt="センジュイソギンチャク"></a><img src="img/ranking2.svg" class="rank2" alt=""></dt>
+	<dd class="name">センジュイソギンチャク</dd>
+	<dd class="comment">体壁がカラフルな個体が多いです。タマイタダキイソギンチャクとそっくりなので、見分けが難しいところ。基本褐色がベースで、グリーンやパープルの個体もあり。</dd>
+	<dd class="kaikata"><a href="#">飼育のポイント</a></dd>
+</dl>
+
+<dl>
+	<dt><a href="#"><img src="img/isogin3.jpg"  alt="タマイタダキイソギンチャク"></a><img src="img/ranking3.svg" class="rank3" alt=""></dt>
+	<dd class="name">タマイタダキイソギンチャク</dd>
+	<dd class="comment">名前の通り触手の頂点（イタダキ）が丸くなっているのが特徴。比較的よく移動しますので、吸水口などに吸い込まれないよう対策は必要。</dd>
+	<dd class="kaikata"><a href="#">飼育のポイント</a></dd>
+</dl>
+
+<dl>
+	<dt><a href="#"><img src="img/isogin4.jpg"　 alt="シライトイソギンチャク"></a><img src="img/ranking4.svg" class="rank4" alt=""></dt>
+	<dd class="name">シライトイソギンチャク</dd>
+	<dd class="comment">触手の先端に紫やピンク色の色が付いているタイプと、触手の先端に色が付いていないタイプの二種類があります。</dd>
+	<dd class="kaikata"><a href="#">飼育のポイント</a></dd>
+</dl>
+</div>
+
+</section>
+</div><!--wrapper-->
+
+<hr size="1px" color="#dddddd" noshade>
+
+<div class="wrapper">
+<section class="twieet">
+	<div class="cf">
+	<p class="image"><img src="img/gardeneel.jpg"></p>
+	<div class="text">
+		<h2>店長のつぶやき</h2>
+		<p>
+		ショップで何気なくカクレクマノミのいる水槽におもちゃの
+		イソギンチャクをいれたら、カクレは本物のイソギンチャクだと
+		思ったのか、中に入ってひらひらしてました。<br>
+		ニセモノなのがちょっとかわいそうでしたけど可愛かったです。
+		個体差はあるのでどの子も同じことをするかは分かりませんが、
+		海水魚飼育を始めて間もない人は、試しに入れてみたらカクレが興味を持つかも？</p>
+	</div>
+	</div>
+</section>
+
+</main>
+</div><!--wrapper-->
+<div class="breadcrumb">
+<div class="wrapper"><a href="index.html">HOME</a>　≫　<a href="#">海水魚</a>　≫ カクレクマノミ</div>
+</div>
+<footer>
+	<div class="wrapper">
+
+		<ul class="navi cf">
+			<li class="navi_1">海水
+				<ul>
+					<li class="navi_2 kaisui"><a href="#">海水魚等</a>
+						<ul>
+							<li class="navi_3"><a href="#">スズメダイ</a></li>
+							<li class="navi_3"><a href="#">クマノミ</a></li>
+							<li class="navi_3"><a href="#">ハゼ</a></li>
+							<li class="navi_3"><a href="#">ハギ・ニザダイ</a></li>
+							<li class="navi_3"><a href="#">ゴンベ・ギンポ・ネズッポ・他</a></li>
+							<li class="navi_3"><a href="#">チョウチョウウオ</a></li>
+							<li class="navi_3"><a href="#">ヤッコ</a></li>
+							<li class="navi_3"><a href="#">ベラ・ブダイ</a></li>
+							<li class="navi_3"><a href="#">エビ・ヤドカリ</a></li>
+							<li class="navi_3"><a href="#">フグ・イザリ・マツカサ</a></li>
+							<li class="navi_3"><a href="#">イソギンチャク・その他</a></li>
+						</ul>
+					</li>
+
+					<li class="navi_2 sango"><a href="#">サンゴ</a>
+						<ul>
+							<li class="navi_3"><a href="#">ソフトコーラル</a></li>
+							<li class="navi_3"><a href="#">ハードコーラル</a>
+								<ul>
+									<li class="navi_4"><a href="#">ＳＰＳ（スモールポリプ）</a></li>
+									<li class="navi_4"><a href="#">ＬＰＳ（ロングポリプ）</a></li>
+								</ul>
+							</li>			
+						</ul>
+					</li>
+				</ul>
+			</li>
+
+
+
+			<li class="navi_1">淡水
+				<ul>
+					<li class="navi_2 tansui"><a href="#">淡水魚等</a>
+						<ul>
+							<li class="navi_3"><a href="#">カラシン（テトラ）</a></li>
+							<li class="navi_3"><a href="#">エンゼル</a></li>
+							<li class="navi_3"><a href="#">コリドラス</a></li>
+							<li class="navi_3"><a href="#">ハギ・ニザダイ</a></li>
+							<li class="navi_3"><a href="#">ベタ・グラミー</a></li>
+							<li class="navi_3"><a href="#">プラティ</a></li>
+							<li class="navi_3"><a href="#">グッピー</a></li>
+							<li class="navi_3"><a href="#">エビ・貝</a></li>
+							<li class="navi_3"><a href="#">金魚</a></li>
+							<li class="navi_3"><a href="#">メダカ</a></li>
+							<li class="navi_3"><a href="#">その他</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+			<li class="navi_1"><a href="#">水草</a>
+				<ul>
+					<li class="navi_2 mizukusa">
+						<ul>
+							<li class="navi_3"><a href="#">有茎草</a></li>
+							<li class="navi_3"><a href="#">アヌビスアス・シダ類</a></li>
+							<li class="navi_3"><a href="#">POT・鉢</a></li>
+							<li class="navi_3"><a href="#">エキノドルス</a></li>
+							<li class="navi_3"><a href="#">クリプトコリネ</a></li>
+							<li class="navi_3"><a href="#">ホシクサ</a></li>
+							<li class="navi_3"><a href="#">水草付流木</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+
+			<li class="navi_1"><a href="#">飼育用品</a>
+				<ul>
+					<li class="navi_2 shiiku">
+						<ul>
+							<li class="navi_3"><a href="#">水槽（単体）・水槽マット</a></li>
+							<li class="navi_3"><a href="#">キャビネット</a></li>
+							<li class="navi_3"><a href="#">プラスチックケース・その他</a></li>
+							<li class="navi_3"><a href="#">ポンプ</a></li>
+							<li class="navi_3"><a href="#">エサ</a></li>
+							<li class="navi_3"><a href="#">ヒーター・サーモ</a></li>
+							<li class="navi_3"><a href="#">水質調整</a></li>
+							<li class="navi_3"><a href="#">クーラー・ファン・冷却装置</a></li>
+							<li class="navi_3"><a href="#">照明</a></li>
+							<li class="navi_3"><a href="#">フィルター・濾過器</a></li>
+							<li class="navi_3"><a href="#">底砂</a></li>
+							<li class="navi_3"><a href="#">メンテナンス・掃除</a></li>
+							<li class="navi_3"><a href="#">レイアウト系</a></li>
+							<li class="navi_3"><a href="#">ろ過材・吸着剤</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+				
+			<li class="info">
+				<ul>
+				<li><a href="#">よくある質問</a></li>
+				<li><a href="#">飼い方・育て方/始め方</a></li>
+				<li><a href="#">ご利用ガイド</a></li>
+				</ul>
+			</li>
+	
+		</ul>	
+
+	<ul class="commpany cf">
+		<li><a href="#">会社概要</a></li>
+		<li><a href="#">プライバシーポリシー</a></li>
+		<li><a href="#">特定商取引に基づく表示</a></li>
+	</ul>
+</div><!--wrapper-->
+<div class="copy">
+	<p>&copy;2018 AQUA SEA</p>
+	<p>このサイトに記載されている記事・写真・図表などの無断複製、無断転載を禁じます。</p>
+</div>
+</footer>
+<p id="page-top"><a href="javascript void(0)">▲<br><span>page top</span></a></p>
+
+</body>
+</html>
